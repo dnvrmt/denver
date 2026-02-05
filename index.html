@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jet Defender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="game-container">
+    <canvas id="bg-canvas"></canvas>
+    <canvas id="game-canvas"></canvas>
+
+    <div id="ui">
+      <div id="score">Score: 0</div>
+      <div id="level">Level: 1</div>
+      <div id="lives">Lives: 3</div>
+      <div id="highscore">High: 0</div>
+    </div>
+
+    <div id="start-screen" class="overlay">
+      <h1>Jet Defender</h1>
+      <p>Use arrow keys / A D to move, Space to shoot. Tap buttons on mobile.</p>
+      <button id="start-btn">Start Game</button>
+      <p class="small">Collect double-bullet & shield powerups. Shield lasts 15s.</p>
+    </div>
+
+    <div id="game-over-screen" class="overlay hidden">
+      <h1>Game Over</h1>
+      <p id="final-score">Score: 0</p>
+      <button id="restart-btn">Restart</button>
+    </div>
+
+    <!-- Mobile touch controls -->
+    <div id="touch-controls">
+      <button id="left-btn" class="touch-btn">◀</button>
+      <button id="shoot-btn" class="touch-btn">●</button>
+      <button id="right-btn" class="touch-btn">▶</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+
+</html>
